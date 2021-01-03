@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Regular Function</h1>
+
+<p>The <strong>this</strong> keyword represents different objects depending on what object called the function.</p>
+
+<button id="btn">Click Me!</button>
+
+<p><strong>this</strong> represents:</p>
+
+<p id="demo"></p>
+
+<p>See the difference before and after the button is clicked.</p>
+  
+<script>
+class Header {
+  constructor() {
+    this.color = "red";
+  }
+
+  changeColor = function() {
+    document.getElementById("demo").innerHTML += this;
+    document.getElementById("demo").style.color = this.color;
+  }
+}
+
+myheader = new Header();
+
+//The window object calls the function:
+window.addEventListener("load", myheader.changeColor);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", myheader.changeColor);
+</script>
+
+<h1>Arrow Function</h1>
+
+<p>The <strong>this</strong> keyword represents the HeaderArrow object.</p>
+
+<button id="btnArrow">Click Me Arrow!</button>
+
+<p><strong>this</strong> represents:</p>
+
+<p id="demoArrow"></p>
+
+
+<script>
+class HeaderArrow {
+  constructor() {
+    this.color = "red";
+  }
+
+  changeColor = () => {
+    document.getElementById("demoArrow").innerHTML += "[" + this.constructor.name + "]";
+    document.getElementById("demoArrow").style.color = this.color;
+  }
+}
+
+myheaderArrow = new HeaderArrow();
+
+//The window object calls the function:
+window.addEventListener("load", myheaderArrow.changeColor);
+
+//A button object calls the function:
+document.getElementById("btnArrow").addEventListener("click", myheaderArrow.changeColor);
+
+</script>
+
+</body>
+</html>
