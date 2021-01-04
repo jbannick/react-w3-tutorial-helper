@@ -10,6 +10,7 @@ The lab notes dealing with each tutorial section describe how I executed that se
 My source code is often modified from the original tutorial examples, to clarify, or sometimes present additional, related, code. 
 
 This repo is not a substitute for the tutorial.  
+
 IMO their tutorial is excellent. Their structure and text are clear and concise.  
 All the examples, except Select in the Forms page, work. That example works within their TryIt environment, but not within the Create React environment. See my lab notes for more on this specific case.
 
