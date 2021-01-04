@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  
+<script>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present(color) {
+    return 'I have a ' + color + ' ' + this.brand;
+  }
+}
+
+mycar = new Car("Prius");
+document.write(mycar.present("white"));
+</script>
+
+</body>
+</html>
