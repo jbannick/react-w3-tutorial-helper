@@ -7,10 +7,5 @@ My source code is often modified from the original tutorial examples, to clarify
 
 This repo is not a substitute for the tutorial. IMO their tutorial is excellent. Their structure and text are clear and concise. All the examples, except Select in the Forms page, work. That example works within their TryIt environment, but not within the Create React environment. See my lab notes for more on this specific case.
 
-This repo contains a README for each section of the tutorial. The README contains my lab notes.
-
-This repo contains my React JSX JavaScript for each section of the tutorial.
-
-It does not include the files that constitute the Create React environment, which is huge.
 
 
