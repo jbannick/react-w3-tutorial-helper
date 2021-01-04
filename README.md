@@ -1,5 +1,4 @@
-# react-w3-tutorial-helper
-Lab notes and source code for w3schools React tutorial
+#Lab notes and source code for the w3schools React tutorial.
 This repo contains the lab notes and source code created as I took the w3schools React tutorial: https://www.w3schools.com/react/
 
 The lab notes clear up some ambiguities and minor gaps. The Hello World and Next sections describe how I set up their Create React environment. The lab notes dealing with each tutorial section describe how I executed that section and my results. 
